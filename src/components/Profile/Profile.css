@@ -1,0 +1,140 @@
+.profile {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+}
+
+.profile__header-section {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.profile__sidebar {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  max-width: 250px;
+}
+
+.profile__job-pref {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-height: 150px;
+}
+
+.profile__job-pref-title {
+  text-align: left;
+  font-size: 18px;
+  color: #58a6ff;
+  font-weight: 500;
+  margin: 0;
+}
+
+.profile__main-pref-container {
+  display: flex;
+  gap: 5px;
+  border-radius: 10px;
+  padding: 0 20px 16px;
+  background: linear-gradient(-145deg, #0d1117, #1a1f2b);
+  color: #8b949e;
+}
+
+.profile__main-pref {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.profile__hero-title-text {
+  align-items: center;
+}
+
+.profile__hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(135deg, #0d1117, #1f6feb);
+  color: #c9d1d9;
+  text-align: center;
+  align-items: center;
+  border-radius: 0 0 15px 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 1s ease-in-out;
+  max-width: 100%;
+}
+
+.profile__hero-title {
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  color: #ffffff;
+  letter-spacing: 1.5px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.profile__job-header {
+  display: flex;
+  justify-content: center;
+  gap: 746px;
+}
+
+.profile__job-title {
+  color: #58a6ff;
+  font-size: 19.2px;
+  line-height: 3px;
+  font-weight: 500;
+  text-indent: 40px;
+}
+
+.profile__refresh-button {
+  background-color: #0d1117;
+  margin-top: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.profile__refresh-button:hover {
+  animation: spin 10s linear;
+}
+
+.profile__refresh-img {
+  width: 25px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .profile__job-header {
+    gap: 346px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .profile__hero-title {
+    font-size: 20px;
+  }
+
+  .profile__sidebar {
+    max-width: 200px;
+  }
+
+  .profile__job-header {
+    gap: 46px;
+  }
+}

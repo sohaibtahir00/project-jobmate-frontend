@@ -1,0 +1,51 @@
+.profile-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-section__items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.profile-section__loading {
+  display: flex;
+  justify-content: center;
+}
+.profile-section__no-jobs {
+  font-size: 18px;
+  color: #6a737d;
+  text-align: center;
+  position: relative;
+}
+
+.profile-section-btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-section__clear-btn {
+  max-width: 260px;
+  width: 100%;
+  padding: 10px 15px;
+  background-color: #1f6feb;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.profile-section__clear-btn:hover {
+  background-color: #58a6ff;
+  transform: scale(1.02);
+}
+
+.profile-section__clear-btn:active {
+  transform: scale(0.97);
+  box-shadow: 0 4px 10px rgba(88, 166, 255, 0.5);
+}
