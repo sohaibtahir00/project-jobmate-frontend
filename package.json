@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://sohaibtahir00.github.io/project-jobmate-frontend",
   "scripts": {
     "dev": "vite --open",
     "build": "vite build",
