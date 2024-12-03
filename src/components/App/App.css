@@ -1,0 +1,13 @@
+@import "../../vendor/fonts.css";
+
+.page {
+  background-color: #0d1117;
+  font-family: "Roboto", "Inter", sans-serif;
+}
+
+.page__content {
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 20px 20px;
+  color: #1f6feb;
+}

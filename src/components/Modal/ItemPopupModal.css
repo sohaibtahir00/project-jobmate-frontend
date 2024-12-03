@@ -1,0 +1,32 @@
+.itempopupmodal__content {
+  font-weight: 400;
+  font-size: 17.2px;
+}
+
+.modal__itempopupmodal-login-btn {
+  width: 124px;
+  height: 36px;
+  color: #ffffff;
+  background-color: #1f6feb;
+  border: none;
+  border-radius: 30px;
+  margin-top: 44px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 5px 15px rgba(31, 111, 235, 0.4);
+  position: absolute;
+  right: 200px;
+}
+
+.modal__itempopupmodal-login-btn:hover {
+  background-color: #58a6ff;
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(88, 166, 255, 0.6);
+}
+
+@media screen and (max-width: 768px) {
+  .modal__itempopupmodal-login-btn {
+    margin-top: 29px;
+  }
+}

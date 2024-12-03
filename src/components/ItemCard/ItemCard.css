@@ -1,0 +1,100 @@
+.item-card {
+  border: 1px solid #1f6feb;
+  border-radius: 20px;
+  padding: 20px;
+  background: linear-gradient(145deg, #0d1117, #1a1f2b);
+  color: #c9d1d9;
+  max-width: 300px;
+  max-height: fit-content;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.item-card:hover {
+  cursor: pointer;
+  transform: scale(1.01);
+  box-shadow: 0 8px 20px rgba(88, 166, 255, 0.6);
+}
+
+.item-card:active {
+  transform: scale(0.97);
+  box-shadow: 0 4px 10px rgba(88, 166, 255, 0.5);
+}
+
+.item-card__title {
+  font-size: 22px;
+  font-weight: 400;
+  color: #58a6ff;
+  margin: 0px 0px 10px;
+}
+
+.item-card__company {
+  font-size: 18px;
+  color: #c9d1d9;
+  margin-bottom: 8px;
+  font-weight: 400;
+}
+
+.item-card__location,
+.item-card__category,
+.item-card__contract,
+.item-card__salary,
+.item-card__date {
+  font-size: 15px;
+  color: #8b949e;
+  margin-bottom: 6px;
+  line-height: 1.4;
+}
+
+.item-card__description {
+  font-size: 15px;
+  color: #c9d1d9;
+  margin-bottom: 15px;
+}
+
+.item-card__apply-btn {
+  padding: 10px 20px;
+  background-color: #1f6feb;
+  color: #ffffff;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 400;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 5px 15px rgba(31, 111, 235, 0.4);
+}
+
+.item-card__apply-btn:hover {
+  background-color: #58a6ff;
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(88, 166, 255, 0.6);
+}
+
+.item-card__apply-btn:active {
+  transform: scale(0.97);
+  box-shadow: 0 4px 10px rgba(88, 166, 255, 0.5);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .item-card {
+    padding: 20px;
+    max-width: 290px;
+    max-height: fit-content;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeIn 0.8s ease-in-out;
+  }
+}
