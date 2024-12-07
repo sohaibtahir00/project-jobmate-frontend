@@ -127,7 +127,7 @@
 
 @media screen and (max-width: 600px) {
   .profile__hero-title {
-    font-size: 20px;
+    font-size: 17px;
   }
 
   .profile__sidebar {
@@ -136,5 +136,33 @@
 
   .profile__job-header {
     gap: 46px;
+  }
+
+  .profile__hero-email,
+  .profile__hero-location {
+    font-size: 12.6px;
+  }
+
+  .profile__header-section {
+    display: block;
+  }
+
+  .profile__job-header {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .profile__job-title {
+    font-size: 14.2px;
+    line-height: 0;
+    margin: 45px 0 12px;
+  }
+
+  .profile__refresh-button {
+    margin: 0;
+  }
+
+  .profile__refresh-img {
+    width: 20px;
   }
 }

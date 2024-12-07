@@ -153,63 +153,97 @@
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
 }
 
-@media screen and (max-width: 768px) {
-  .main__logged-in-hero,
-  .main__hero {
-    padding: 20px 20px;
-  }
-
-  .main__logged-in-title {
-    font-size: 32px;
-  }
-
-  .main__hero-title {
-    font-size: 38px;
-  }
-
-  .main__hero-text {
-    font-size: 18px;
-  }
-
-  .main__quote {
-    font-size: 16.7px;
-  }
-
-  .main__show-more {
-    margin: 0 250px;
-  }
-}
-
 @media screen and (max-width: 600px) {
-  .main__logged-in-hero,
-  .main__hero {
-    padding: 10px 10px;
+  .main__listings {
+    gap: 15px;
+    padding: 10px;
   }
 
-  .main__logged-in-title {
-    font-size: 26px;
+  .main__item-card {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .main__hero {
+    padding: 20px;
+    border-radius: 0 0 15px 15px;
   }
 
   .main__hero-title {
-    font-size: 28px;
+    font-size: 24px;
+    margin-bottom: 15px;
   }
 
   .main__hero-text {
-    font-size: 17.5px;
-  }
-
-  .main__quote {
-    font-size: 16.7px;
-  }
-
-  .main__show-more {
-    padding: 10px 15px;
-    white-space: nowrap;
-    font-size: 15px;
+    font-size: 16px;
+    line-height: 1.5;
   }
 
   .main__hero-button {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  .main__quote {
+    font-size: 14px;
+    max-width: 100%;
+  }
+
+  .main__logged-in-hero {
+    padding: 20px;
+  }
+
+  .main__logged-in-title {
+    font-size: 22px;
+  }
+
+  .main__show-more {
+    padding: 8px 12px;
+    font-size: 14px;
+    margin: 0 auto;
+  }
+
+  .main__no-jobs,
+  .main__error {
+    font-size: 16px;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .main__listings {
+    gap: 10px;
+    padding: 8px;
+  }
+
+  .main__hero {
     padding: 15px;
-    font-size: 16.6px;
+  }
+
+  .main__hero-title {
+    font-size: 20px;
+  }
+
+  .main__hero-text {
+    font-size: 14px;
+  }
+
+  .main__hero-button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .main__show-more {
+    font-size: 13px;
+    padding: 6px 10px;
+  }
+
+  .main__quote {
+    font-size: 12px;
+  }
+
+  .main__item-card {
+    flex: 0 0 100%;
+    max-width: 100%;
   }
 }

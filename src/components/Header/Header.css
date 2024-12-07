@@ -91,8 +91,20 @@
 }
 
 @media screen and (max-width: 600px) {
+  .header {
+    padding: 10px 20px;
+    border-radius: 10px 10px 0 0;
+  }
+
   .header__logo {
     width: 100px;
+    margin-right: 16px;
+  }
+
+  .header__content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
   }
 
   .header__date {
@@ -103,5 +115,46 @@
   .header__signup-btn,
   .header__login-btn {
     font-size: 15px;
+    padding: 8px 15px;
+  }
+
+  .header__home-btns {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .header__user-name-link {
+    font-size: 15px;
+    padding: 8px 8px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header {
+    padding: 8px 16px;
+  }
+
+  .header__logo {
+    width: 80px;
+  }
+
+  .header__date {
+    font-size: 13px;
+  }
+
+  .header__logout-btn,
+  .header__signup-btn,
+  .header__login-btn {
+    font-size: 13px;
+    padding: 6px 10px;
+  }
+
+  .header__home-btns {
+    justify-content: center;
+  }
+
+  .header__user-name-link {
+    font-size: 13px;
+    padding: 6px 6px;
   }
 }

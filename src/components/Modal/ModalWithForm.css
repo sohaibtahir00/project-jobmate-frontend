@@ -270,6 +270,7 @@
 .modal__location-options {
   display: flex;
   flex-direction: column;
+  margin-top: 20px;
 }
 
 .modal__label-register-radio-btn {
@@ -288,8 +289,60 @@
   .modal__title {
     padding-bottom: 5px;
   }
+
   .modal__other-btn,
   .modal__submit {
     margin-top: 29px;
+    width: 100px;
+    height: 36px;
+    right: 30px;
+    font-size: 14px;
+  }
+
+  .modal__content {
+    padding: 28px 28px 36px;
+    max-width: 296px;
+    border-radius: 20px;
+  }
+
+  .modal__input {
+    width: 235px;
+    height: 30px;
+    margin-top: 14px;
+  }
+
+  .modal__location-options {
+    margin-top: 15px;
+    font-size: 12px;
+  }
+
+  .modal__location-text {
+    font-size: 12px;
+  }
+
+  .modal__input-zip {
+    width: 140px;
+    height: 30px;
+    margin-top: 8px;
+  }
+
+  .modal__input-register-zip-container {
+    flex-direction: column;
+    align-items: baseline;
+    position: relative;
+  }
+
+  .modal__other-btn-zip {
+    width: 140px;
+    position: static;
+    margin-top: 4px;
+    font-size: 14px;
+  }
+
+  .modal__label-register {
+    width: 235px;
+    max-height: 30px;
+    margin-top: 24px;
+    text-indent: 20px;
   }
 }

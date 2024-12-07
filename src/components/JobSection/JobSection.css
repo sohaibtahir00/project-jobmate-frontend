@@ -49,3 +49,9 @@
   transform: scale(0.97);
   box-shadow: 0 4px 10px rgba(88, 166, 255, 0.5);
 }
+
+@media screen and (max-width: 768px) {
+  .profile-section__items {
+    padding: 5px;
+  }
+}

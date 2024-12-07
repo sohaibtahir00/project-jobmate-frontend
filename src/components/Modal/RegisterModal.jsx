@@ -100,7 +100,7 @@ function RegisterModal({ activeModal, onClose, onRegister, handleLogin }) {
         />
       </label>
 
-      <div className="modal__label-register">
+      <div className="modal__label-register-location">
         <div className="modal__location-options">
           <label className="modal__label-register-radio">
             <input
@@ -127,7 +127,9 @@ function RegisterModal({ activeModal, onClose, onRegister, handleLogin }) {
         </div>
 
         {selectedOption === "find" && location && (
-          <p>Your current location: {location}</p>
+          <p className="modal__location-text">
+            Your current location: {location}
+          </p>
         )}
 
         {selectedOption === "zip" && (
@@ -146,7 +148,9 @@ function RegisterModal({ activeModal, onClose, onRegister, handleLogin }) {
             >
               Find Location
             </button>
-            {zipLocation && <p>{zipLocation}</p>}
+            {zipLocation && (
+              <p className="modal__location-text">{zipLocation}</p>
+            )}
           </div>
         )}
 

@@ -134,4 +134,15 @@
   .item-modal__title {
     max-width: 440px;
   }
+
+  .item-modal {
+    max-width: 320px;
+  }
+
+  .item-modal__description {
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
 }
