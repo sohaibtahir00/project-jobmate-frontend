@@ -135,10 +135,6 @@
     max-width: 440px;
   }
 
-  .item-modal {
-    max-width: 320px;
-  }
-
   .item-modal__description {
     display: -webkit-box;
     -webkit-line-clamp: 5;

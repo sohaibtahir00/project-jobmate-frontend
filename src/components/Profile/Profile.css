@@ -101,7 +101,7 @@
 }
 
 .profile__refresh-button:hover {
-  animation: spin 10s linear;
+  animation: spin 5s linear;
 }
 
 .profile__refresh-img {
@@ -127,7 +127,7 @@
 
 @media screen and (max-width: 600px) {
   .profile__hero-title {
-    font-size: 17px;
+    font-size: 14px;
   }
 
   .profile__sidebar {
@@ -143,19 +143,24 @@
     font-size: 12.6px;
   }
 
+  .profile__main-pref-container {
+    padding: 0 10px;
+  }
+
   .profile__header-section {
-    display: block;
+    padding: 10px;
+    gap: 0;
   }
 
   .profile__job-header {
-    flex-direction: column;
-    gap: 8px;
+    justify-content: space-around;
+    border-top: 1px solid #1f6feb;
+    padding: 15px;
   }
 
   .profile__job-title {
     font-size: 14.2px;
-    line-height: 0;
-    margin: 45px 0 12px;
+    text-indent: 0;
   }
 
   .profile__refresh-button {

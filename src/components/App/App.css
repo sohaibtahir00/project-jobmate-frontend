@@ -3,6 +3,7 @@
 .page {
   background-color: #0d1117;
   font-family: "Roboto", "Inter", sans-serif;
+  min-height: 100vh;
 }
 
 .page__content {
